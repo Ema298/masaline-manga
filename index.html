@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <title>موقع المانجا</title>
+  <meta charset="UTF-8" />
+  <title>موقعي</title>
   <style>
-    body {
-      background-color: #f7f0ff;
-      color: #333;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
-    }
-    h1 {
-      color: #6a1b9a;
+    /* غلاف الموقع */
+    .cover {
+      width: 100%;
+      height: 400px; /* ارتفاع الغلاف */
+      background-image: url('images/cover.jpg'); /* رابط صورة الغلاف */
+      background-size: cover;      /* تغطي كامل القسم */
+      background-position: center; /* تمركز الصورة */
+      display: flex;
+      justify-content: center; /* تمركز أفقي للنص */
+      align-items: center;     /* تمركز عمودي للنص */
+      color: white;
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
     }
   </style>
 </head>
 <body>
-  <h1>مرحبًا بك في موقع المانجا!</h1>
-  <p>الموقع يعمل بنجاح من خلال GitHub Pages</p>
+  <div class="cover">
+    مرحباً بك في موقعي
+  </div>
 </body>
 </html>
+
