@@ -1,0 +1,31 @@
+/* هيكل مجلدات الموقع */
+
+📁 masaline-manga/ ├── index.html            # الصفحة الرئيسية (فهرس الفصول) ├── styles.css            # ملف التنسيقات ├── 📁 chapters/           # مجلد يحتوي على الفصول │   ├── 📁 chapter1/ │   │   ├── 1.jpg │   │   ├── 2.jpg │   │   └── ... │   ├── 📁 chapter2/ │   │   ├── 1.jpg │   │   └── ... │   └── ... ├── 📁 images/             # صور عامة (شعار، غلاف) │   └── cover.jpg └── chapter.html          # صفحة عرض الفصل الواحد
+
+/* index.html - صفحة الفهرس */
+
+<!DOCTYPE html><html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>فهرس الفصول - MasaLine Manga</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>مرحبا بكم في ماسا لاين مانجا</h1>
+    <img src="images/cover.jpg" alt="غلاف الموقع" class="cover">
+  </header>  <main>
+    <h2>الفصول:</h2>
+    <ul class="chapters-list">
+      <li><a href="chapter.html?c=1">الفصل 1</a></li>
+      <li><a href="chapter.html?c=2">الفصل 2</a></li>
+      <!-- أضف المزيد حسب عدد الفصول -->
+    </ul>
+  </main>  <footer>
+    <p>&copy; 2025 MasaLine</p>
+  </footer>
+</body>
+</html>/* chapter.html - صفحة عرض الفصل */
+
+<!DOCTYPE html><html
